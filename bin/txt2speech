@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+require_relative "../lib/txt2speech/txt2speech"
+
+options = {}
+OptionParser.new do |opts|
+  opts.banner = "Usage: txt2speech [options]"
+
+  opts.on("-t", "--text [String]", String, "Write a text that have to be saved") {|text| options[:text] = text }
+  opts.on("-o", "--output [String]", String, "Output file") {|o| options[:out] = o }
+  opts.on("-f", "--read-from [String]", String, "Read from file") {|o| options[:from] = o}
+end.parse!
+
+out = options[:out].to_s.length > 0 ? options[:out] : "out.mp3"
+
+cmd = if options[:from].to_s.length > 0
+	[:load, options[:from].to_s]
+else
+	[:new, options[:text].to_s]
+end
+
+f = Txt2Speech.send(*cmd)
+f.save(out)
