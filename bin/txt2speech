@@ -7,7 +7,7 @@ options = {}
 OptionParser.new do |opts|
   opts.banner = "Usage: txt2speech [options]"
 
-  opts.on("-t", "--text [String]", String, "Write a text that have to be saved") {|text| options[:text] = text }
+  opts.on("-o", "--output [String]", String, "Output file") {|o| options[:out] = o }
   opts.on("-r", "--read [String]", String, "Read text") {|o| options[:read] = o}
   opts.on("-f", "--file", "From file") {|o| options[:file] = o }
 end.parse!
