@@ -1,7 +1,7 @@
 txt2Speech lifehack of using Google Translate. Allow you to convert text into speech.
 
 ```
-bin/txt2speech -f README.md -o example.mp3
+bin/txt2speech -r README.md -f -o example.mp3
 ```
 
 ### To use library directly in your application just install gem and run 
