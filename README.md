@@ -1,4 +1,4 @@
-txt2Speech is a very simple ruby gem that allow you to convert text to speech by using Google Translate.
+txt2Speech lifehack of using Google Translate. Allow you to convert text into speech.
 
 ```
 bin/txt2speech -f README.md -o example.mp3
