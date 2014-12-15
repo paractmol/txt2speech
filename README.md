@@ -7,7 +7,7 @@ bin/txt2speech -r README.md -f -o example.mp3
 ### To use library directly in your application just install gem and run 
 
 ```
-2.1.2 :001 > require 'text2speech/txt2speech'
+2.1.2 :001 > require 'txt2speech'
  => true
 2.1.2 :010 > f = Txt2Speech.new "Hello I am Google robot! Nice to meet you, hope you'll enjoy this script and will fork it"
  => #<Txt2Speech:0x000000029a3290 @text="Hello I am Google robot! Nice to meet you, hope you'll enjoy this script and will fork it", @lang="en">

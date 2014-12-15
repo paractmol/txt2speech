@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'optparse'
-require_relative "../lib/txt2speech/txt2speech"
+require_relative "../lib/txt2speech"
 
 options = {}
 OptionParser.new do |opts|
