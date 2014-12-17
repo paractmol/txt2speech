@@ -2,4 +2,4 @@
 
 require_relative "../lib/txt2speech/application"
 
-Application.new
+Txt2Speech::Application.new

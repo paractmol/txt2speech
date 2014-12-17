@@ -1,1 +1,1 @@
-require_relative 'txt2speech/txt2speech'
+require_relative 'txt2speech/speech'

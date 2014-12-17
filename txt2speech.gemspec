@@ -11,6 +11,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Jared Levitz"]
   s.email       = 'jared.levitz@gmail.com'
   s.files       = `git ls-files`.split("\n")
+  s.executables = ['txt2speech']
   s.homepage    = 'http://github.com/rudkovsky/txt2speech'
   s.license     = 'MIT'
 end
