@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Txt2Speech::VERSION
   s.date        = '2013-09-02'
   s.summary     = "txt2speech"
-  s.description = "Gem"
+  s.description = "txt2Speech lifehack of using Google Translate. Allow you to convert text into speech."
   s.authors     = ["Jared Levitz"]
   s.email       = 'jared.levitz@gmail.com'
   s.files       = `git ls-files`.split("\n")
