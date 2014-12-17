@@ -4,6 +4,12 @@ txt2Speech lifehack of using Google Translate. Allow you to convert text into sp
 bin/txt2speech -r README.md -f -o example.mp3
 ```
 
+to change language to read
+
+```
+bin/txt2speech -r examples/de.txt -f -l de
+```
+
 ### To use library directly in your application just install gem and run 
 
 ```
