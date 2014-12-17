@@ -14,7 +14,7 @@ class Txt2Speech
  
 	def self.load(file_path, lang = 'en')
 		f = File.open(file_path)
-		self.new f.read.encode("UTF-16be", :invalid=>:replace, :replace=>"?").encode('UTF-8')
+		self.new f.read.encode("UTF-16be", :invalid=>:replace, :replace=>"?").encode('UTF-8'), lang
 	end
  
 	def save(file_path)
@@ -28,8 +28,8 @@ class Txt2Speech
 
 		puts ar.inspect
  
-		ar.each do |q|
-			uri.query = URI.encode_www_form({ ie: 'UTF-8', q: q, tl: lang, total: 1, idx: 5, textlen: q.length, prev: 'input'  })
+		ar.each_with_index do |q, idx|
+			uri.query = URI.encode_www_form({ ie: 'UTF-8', q: q, tl: lang, total: ar.length, idx: idx+1, textlen: q.length, prev: 'input'  })
 			res = Net::HTTP.get_response(uri)
  
 			response << res.body.force_encoding(Encoding::UTF_8) if res.is_a?(Net::HTTPSuccess)
