@@ -20,7 +20,7 @@ module Txt2Speech
 			if options[:version]
 				puts options[:version]
 			else
-				out = options[:out].to_s.length > 0 ? options[:out] : "out.mp3"
+				out = options[:out].to_s.length > 0 ? options[:out] : "out.mpg"
 
 				attrs = [options[:read], options[:lang] || "en"]
 				attrs.unshift(options[:file] ? :load : :new)
