@@ -45,14 +45,14 @@ module Txt2Speech
 		private
 
 		def divide(text)
-			return text if text.length < 99
+			return text if text.length < 150
 
-			attempts = text.length / 99.0
+			attempts = text.length / 150.0
 			starts = 0
 			ar = []
 
 			attempts.ceil.times do 
-				ends = starts + 99
+				ends = starts + 150
 				ar << text[starts...ends]
 				starts = ends
 			end
