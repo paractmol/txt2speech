@@ -1,5 +1,0 @@
-When Tile, the square-shaped lost-item tracker that attaches to bags, bikes, key chains and more, announced this fall that it had raised $13 million in funding (a combination of a seed round and Series A investment), the company said it had earmarked some of that money to be put towards hiring more Android engineers. Now that investment has paid off, as Tile today debuts support for Android smartphones, allowing a larger group of users the ability to find missing or stolen items using their mobile device.
-
-Tile, in case you missed it, was one of crowdfunding’s bigger hits, demonstrating both the potential that comes from raising funds directly from an interested consumer user base, but also the drawbacks. Tile initially struggled to meet its expected shipping times, and then had to struggle through a backlog once things were finally up-and-running. That backlog cleared up around Black Friday this year, and now Tile is processing orders as usual.
-
-The company declined to provide an update on sales figures today, however, but as of October the company reported it had sold half a million devices.
