@@ -1,15 +1,9 @@
 [![Build Status](https://travis-ci.org/rudkovsky/txt2speech.svg)](https://travis-ci.org/rudkovsky/txt2speech)
 
-txt2Speech lifehack of using Google Translate. Allow you to convert text into speech.
+txt2Speech is a library that with a help of Google Translate let you convert your text to speech
 
 ```
 bin/txt2speech -r README.md -f -o example.mpg
-```
-
-to change language to read
-
-```
-bin/txt2speech -r examples/de.txt -f -l de
 ```
 
 ### To use library directly in your application just install gem and run 
