@@ -20,6 +20,7 @@ RSpec.describe Txt2Speech::Speech, '#new' do
     after(:each) do
       @speech.save(output_path)
       expect(File.exists?(output_path)).to eq(true)
+      expect(File.size(output_path)).to be > 0
       [output_path, "/tmp/txt2speech.txt"].each do |f|
         FileUtils.rm(f) if File.exists?(f)
       end
