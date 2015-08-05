@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/rudkovsky/txt2speech.svg)](https://travis-ci.org/rudkovsky/txt2speech)
+
 txt2Speech lifehack of using Google Translate. Allow you to convert text into speech.
 
 ```
