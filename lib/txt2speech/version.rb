@@ -1,3 +1,3 @@
 module Txt2Speech
-	VERSION = '0.7'
+	VERSION = '0.9'
 end

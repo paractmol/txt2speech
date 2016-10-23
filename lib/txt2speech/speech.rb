@@ -30,13 +30,13 @@ module Txt2Speech
       puts ar.inspect
 
       ar.each_with_index do |q, idx|
-        uri.query = URI.encode_www_form({ ie: 'UTF-8', q: q, tl: lang, total: ar.length, idx: 0, textlen: q.length, client: 't', prev: 'input'  })
+        uri.query = URI.encode_www_form({ ie: 'UTF-8', q: q, tl: lang, total: ar.length, idx: 0, textlen: q.length, client: 'tw-ob', prev: 'input'  })
         res = Net::HTTP.get_response(uri)
 
         response << res.body.force_encoding(Encoding::UTF_8) if res.is_a?(Net::HTTPSuccess)
       end
 
-      File.open(file_path, 'wb') do |f| 
+      File.open(file_path, 'wb') do |f|
         f.write response.join
         return f.path
       end
@@ -51,7 +51,7 @@ module Txt2Speech
       starts = 0
       ar = []
 
-      attempts.ceil.times do 
+      attempts.ceil.times do
         ends = starts + 150
         ar << text[starts...ends]
         starts = ends
