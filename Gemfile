@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'bundle'
+gem 'bundler'
 gem 'rake'
 gem 'rspec', :require => 'spec'
