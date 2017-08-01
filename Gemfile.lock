@@ -24,3 +24,6 @@ DEPENDENCIES
   bundler
   rake
   rspec
+
+BUNDLED WITH
+   1.12.5

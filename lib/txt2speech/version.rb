@@ -1,3 +1,3 @@
 module Txt2Speech
-	VERSION = '0.9'
+  VERSION = '1.0'.freeze
 end
